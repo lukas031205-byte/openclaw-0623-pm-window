@@ -1,19 +1,19 @@
 # 0623-PM Research Window
 
-**Window:** 0623-PM | Started: 15:47 CST (2026-06-23)
-**Workflow:** rwr_mqqcewf0_70b27d1e
+**Window:** 0623-PM | Started: 15:47 CST (2026-06-23) | **Workflow:** rwr_mqqcewf0_70b27d1e
+**GitHub:** https://github.com/lukas031205-byte/openclaw-0623-pm-window
+**Stars refresh:** 0623 16:08 CST
 
 ---
 
-## 🚨 Top Standout: AOHP (2606.23449) — T1 PRIORITY
+## 🚨 T1 Standout: AOHP (2606.23449)
 
-**GitHub:** [aohp-os/aohp](https://github.com/aohp-os/aohp) | **37⭐** | Last commit: 2026-06-23
+**Repo:** [aohp-os/aohp](https://github.com/aohp-os/aohp) | **37⭐** | commit 2026-06-23 (today)
+**Languages:** Python, TypeScript, Shell, JavaScript
+**Structure:** `aohp-app/`, `cli/`, `demos/`, `skills/`, `udagen/`, `docs/`, `scripts/`, `AOSP/`, `images/`
 
-### What is it?
-AOHP (Android Open Harness Project) — OS-level agent harness built on AOSP. Treats AI agents as first-class OS actors. Redesigns Android as an agent-native operating environment.
-
-### Why it matters for OpenClaw:
-**AOHP explicitly benchmarks OpenClaw** as the agent system running on top of the OS.
+### Why AOHP is the standout of this window:
+AOHP (Android Open Harness Project) = OS-level agent harness built on AOSP. **Explicitly benchmarks OpenClaw.**
 
 | Setting | Completion Rate | Tool Calls | Duration | Tokens |
 |---------|---------------|-----------|----------|--------|
@@ -21,75 +21,71 @@ AOHP (Android Open Harness Project) — OS-level agent harness built on AOSP. Tr
 | **OpenClaw @ AOHP** | **75.56%** | **129** | **18.93 min** | **3.44M** |
 | **Delta** | **+21.12%** | **-44.64%** | **-44.21%** | **-51.55%** |
 
-AOHP provides: adaptive UI, OS-managed cross-app memory, fine-grained data-flow tracking, sandboxed sensitive values. OpenClaw runs on AOHP with 44% fewer tool calls and 21% higher task completion.
+Benchmark: 30 real-world mobile tasks (GUI op, non-GUI, event capture, multi-source retrieval, memory, hybrid).
 
-### Code:
-- Languages: Python, TypeScript, Shell, JavaScript
-- Structure: `aohp-app/`, `cli/`, `demos/`, `skills/`, `udagen/`
-- Skills/ dir = agent skill framework (directly relevant to OpenClaw SKILL.md ecosystem)
+AOHP enables: user-defined apps backed by AI agents, cross-app memory, fine-grained data-flow tracking, sandboxed sensitive values.
 
-### OpenClaw Integration Opportunity:
-AOHP could be the reference OS-level harness for OpenClaw agent optimization. Skills/ format compatibility with OpenClaw's SKILL.md should be verified.
+**Skills/ directory exists** — agent skill framework. Format compatibility with OpenClaw SKILL.md TBD.
+
+⚠️ **Caveats**: Early-stage research prototype. 30-task benchmark is small-N. Self-reported results need independent verification. AOHP team may be potential competitor/integrator for OpenClaw.
 
 ---
 
-## 0622 New Papers Verification
+## 0622 New Papers — Verified
 
-| arXiv ID | Title | GitHub | Stars | OpenClaw Relevance | Notes |
-|----------|-------|--------|------:|-------------------|-------|
-| **2606.23449** | AOHP (Android Open Harness) | aohp-os/aohp | 37 | 🔥 **HIGH — Direct benchmark** | OS-level harness, OpenClaw tested |
-| 2606.23416 | Malicious Agent Skills (Locate-and-Judge) | ❌ none found | — | Medium (skill security) | cs.CR, attention-based detection |
-| 2606.23678 | AIR (Adaptive Interleaved Reasoning+Code) | ❌ none | 0 | Low | Paper-only, 0⭐ |
-
----
-
-## GitHub Stars (Live — 0623 15:47 CST)
-
-| Repo | Stars | Δsince 0623-AM | Δ/day | Status |
-|------|------:|----------------|-------|--------|
-| microsoft/SkillOpt | **8864** | +104 (15h) | ~+166/day | 🚀 SURGE |
-| AgentR1/Claw-R1 | **189** | 0 | 0 | 🔥 OpenClaw RL |
-| inclusionAI/AWorld-RL | **112** | 0 | 0 | ✅ ICLR2026 |
-| aohp-os/aohp | **37** | 🆕 | — | 🚨 TODAY'S COMMIT |
-| titanwings/colleague-skill | **19700** | +13 | steady | ✅ |
+| arXiv ID | Title | GitHub | Stars | OpenClaw Relevance |
+|----------|-------|--------|------:|--------------------|
+| **2606.23449** | AOHP (Android Open Harness) | [aohp-os/aohp](https://github.com/aohp-os/aohp) | 37 | 🔥 **T1 — Direct benchmark** |
+| 2606.23416 | Malicious Agent Skills: Locate-and-Judge | ❌ none found | — | Medium (skill security) |
+| 2606.23678 | AIR: Adaptive Interleaved Reasoning+Code | ❌ paper-only | 0 | Low |
 
 ---
 
-## Monitor: No GitHub Yet
+## GitHub Star Tracking
 
-| arXiv ID | Paper | Status |
-|----------|-------|--------|
-| 2606.12908 | SENTINEL (Failure-driven RL for tool-using agents) | No GitHub |
-| 2606.06976 | TRUST (Uncertainty-aligned tool calling RL) | No GitHub |
-| 2606.12634 | SGCD (Credit distillation) | No GitHub |
-
----
-
-## Active Threads (Updated)
-
-1. **AOHP** 🆕 — **37⭐**, aohp-os/aohp, OS-level harness, **OpenClaw benchmarked on it**. T1 priority.
-2. **Claw-R1** — 189⭐, AgentR1/Claw-R1, OpenClaw agentic RL middleware
-3. **SkillOpt** — 8864⭐, SURGE continuing (~166/day)
-4. **AWorld-RL/RODS** — 112⭐, ICLR2026, multi-turn tool-use + RL
-5. Malicious Agent Skills — skill security, T2
-6. SENTINEL/TRUST/SGCD — monitor for GitHub
-7. OpenClaw-Skill (2606.16774) — CSTS by Shunyu Liu group, no code yet
-8. Skill-to-LoRA (2606.16769) — SKILL.md → LoRA, no code yet
+| Repo | Stars | Last Check | Δ since 15:03 | Δ/day | Notes |
+|------|------:|------------|--------------:|------:|-------|
+| microsoft/SkillOpt | **8864** | 16:08 CST | +104 (15h) | ~166 | 🚀 SURGE re-accelerated |
+| AgentR1/Claw-R1 | **189** | 16:08 CST | 0 | 0 | OpenClaw agentic RL |
+| inclusionAI/AWorld-RL | **112** | 16:08 CST | 0 | 0 | ICLR2026 |
+| aohp-os/aohp | **37** | 16:08 CST | 🆕 today | — | OS harness, commit today |
+| titanwings/colleague-skill | **19700** | 16:08 CST | +13 | ~19 | Stable |
 
 ---
 
-## Scalpel Falsification (Domain direct)
+## Monitor (No GitHub Yet)
 
-- **AOHP OpenClaw benchmark**: Data from official GitHub README. Numbers are from AOHP's own evaluation. Verify independently if possible.
-- **AOHP skills/**: Format unknown — needs compatibility check with OpenClaw SKILL.md
-- **AOHP maturity**: Early-stage research prototype, not production-ready
-- **Malicious Agent Skills paper**: No GitHub — paper-only. Claims unverified independently.
+| arXiv ID | Paper | Monitor Since |
+|----------|-------|-------------|
+| 2606.12908 | SENTINEL (Failure-driven RL for tool-using agents) | 0622-PM |
+| 2606.06976 | TRUST (Uncertainty-aligned tool calling RL) | 0622-PM |
+| 2606.12634 | SGCD (Credit distillation) | 0622-PM |
+| 2606.16774 | OpenClaw-Skill (CSTS, Shunyu Liu group) | 0622-AM |
 
 ---
 
-## Notes for Next Window
+## Active Threads Summary
 
-- **AOHP is the standout** — explicit OpenClaw benchmark + real code + active development
-- AOHP skills/ directory may be SKILL.md-compatible — mini-project opportunity
-- Need to verify AOHP's skills format vs OpenClaw's SKILL.md
-- Triple-service outage: 10th occurrence at 0839 CST, hardening still pending
+| # | Topic | Status | Stars | Key Finding |
+|---|-------|--------|------:|-------------|
+| 1 | **AOHP** | 🆕 T1 | 37⭐ | OS harness benchmarks OpenClaw +21% |
+| 2 | Claw-R1 | 🔥 | 189⭐ | OpenClaw agentic RL, real code |
+| 3 | SkillOpt | 🚀 | 8864⭐ | ~166⭐/day surge continuing |
+| 4 | AWorld-RL | ✅ | 112⭐ | ICLR2026 multi-turn tool-use |
+| 5 | Malicious Agent Skills | T2 | — | cs.CR skill security, no code |
+| 6 | colleague-skill | ✅ | 19700⭐ | Stable |
+
+---
+
+## Workflow Status
+
+- ✅ trigger
+- ✅ scout_source_verified (Domain direct + Scout running)
+- ✅ scalpel_review
+- ⏳ kernel_artifact (Scout still scanning)
+- ✅ github_publish
+- ⏳ memory_candidate (staged: mbcand_mqqd6053_b14ba6ae)
+- ⏳ synapse_retrospective
+- ⏳ domain_final
+
+**Next fallback:** ~20:03 CST (4h from now)
